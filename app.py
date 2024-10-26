@@ -1,4 +1,6 @@
 # app.py
+import warnings
+warnings.filterwarnings("ignore")
 
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline

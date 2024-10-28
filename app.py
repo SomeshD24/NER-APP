@@ -6,7 +6,7 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
 
 # Load the BERT model and tokenizer
-model_name = "xlm-roberta-large"
+model_name = "dbmdz/bert-large-cased-finetuned-conll03-english"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForTokenClassification.from_pretrained(model_name)
 
